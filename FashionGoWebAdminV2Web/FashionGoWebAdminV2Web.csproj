@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10399C8B-209A-487E-ACC1-FEB0873EA2AF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionGoWebAdminV2Web</RootNamespace>
+    <AssemblyName>FashionGoWebAdminV2Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".gitignore" />
+    <None Include="angular-cli.json" />
+    <None Include="App.config" />
+    <None Include="package.json" />
+    <None Include="README.md" />
+    <None Include="src\app\app.component.scss" />
+    <None Include="src\assets\.gitkeep" />
+    <None Include="src\assets\fonts\Fgicon.eot" />
+    <None Include="src\assets\fonts\Fgicon.ttf" />
+    <None Include="src\assets\fonts\Fgicon.woff" />
+    <None Include="src\assets\scss\common.scss" />
+    <None Include="src\assets\scss\icons.scss" />
+    <None Include="src\assets\scss\styles.scss" />
+    <None Include="src\assets\scss\variables.scss" />
+    <None Include="src\pages\administration\access-code\access.code.scss" />
+    <None Include="src\pages\administration\access-ip\access.scss" />
+    <None Include="src\pages\administration\group-management\group.management.scss" />
+    <None Include="src\pages\administration\login-history\login.history.scss" />
+    <None Include="src\pages\administration\menus\menus.scss" />
+    <None Include="src\pages\administration\resources\resources.scss" />
+    <None Include="src\pages\administration\user-management\user.management.scss" />
+    <None Include="src\pages\ads\ad-spot-setting\ad.spot.setting.scss" />
+    <None Include="src\pages\ads\ad-statistics\ad.statistics.scss" />
+    <None Include="src\pages\ads\banner-ad\banner.ad.scss" />
+    <None Include="src\pages\ads\duplicate-ads\duplicate.ads.scss" />
+    <None Include="src\pages\ads\email-marketing\email.marketing.scss" />
+    <None Include="src\pages\ads\empty-ads\empty.ads.scss" />
+    <None Include="src\pages\ads\item-ad\item.ad.scss" />
+    <None Include="src\pages\bidding\bidding-history\bidding.history.scss" />
+    <None Include="src\pages\bidding\bidding-main\bidding.main.scss" />
+    <None Include="src\pages\bidding\bidding-report\bidding.report.scss" />
+    <None Include="src\pages\bidding\bidding-setting\bidding.setting.scss" />
+    <None Include="src\pages\buyers\buyer-detail\buyer.detail.scss" />
+    <None Include="src\pages\buyers\buyer-list\buyer.list.scss" />
+    <None Include="src\pages\buyers\buyer-rating\buyer.rating.scss" />
+    <None Include="src\pages\buyers\complain-center\complain.center.scss" />
+    <None Include="src\pages\buyers\duplicate-buyer\duplicate.buyer.scss" />
+    <None Include="src\pages\common\footer\footer.scss" />
+    <None Include="src\pages\common\header\header.scss" />
+    <None Include="src\pages\common\pagenotfound\page.not.found.scss" />
+    <None Include="src\pages\common\sidemenu\sidemenu.scss" />
+    <None Include="src\pages\messages\contact-us\contact.us.scss" />
+    <None Include="src\pages\messages\message-buyers\message.buyers.scss" />
+    <None Include="src\pages\messages\message-vendors\message.vendors.scss" />
+    <None Include="src\pages\messages\notice-buyers\notice.buyers.scss" />
+    <None Include="src\pages\messages\notice-vendors\notice.vendors.scss" />
+    <None Include="src\pages\order-management\consolidation.scss" />
+    <None Include="src\pages\site-management\category\category.scss" />
+    <None Include="src\pages\site-management\dm\dm.scss" />
+    <None Include="src\pages\site-management\fg-policy\fg.policy.scss" />
+    <None Include="src\pages\site-management\new-vendor-setting\new.vendor.setting.scss" />
+    <None Include="src\pages\site-management\product-attributes\product.attributes.scss" />
+    <None Include="src\pages\site-management\show-info\show.info.scss" />
+    <None Include="src\pages\site-management\todays-deal\todays.deal.scss" />
+    <None Include="src\pages\site-management\trend-report\trend.report.scss" />
+    <None Include="src\pages\statistics\best-item\best.item.scss" />
+    <None Include="src\pages\statistics\hot-search\hot.search.scss" />
+    <None Include="src\pages\surist\buyer\buyer.scss" />
+    <None Include="src\pages\surist\item-edit\item.edit.scss" />
+    <None Include="src\pages\surist\shipping-address\shipping.address.scss" />
+    <None Include="src\pages\surist\vendor\vendor.scss" />
+    <None Include="src\pages\vendors\banner-request\banner.request.scss" />
+    <None Include="src\pages\vendors\blocked-vendors\blocked.vendors.scss" />
+    <None Include="src\pages\vendors\creditcard-vendors\creditcard.vendors.scss" />
+    <None Include="src\pages\vendors\forms\forms.scss" />
+    <None Include="src\pages\vendors\vendor-list\vendor.list.scss" />
+    <None Include="src\pages\vendors\vendor-rating\vendor.rating.scss" />
+    <None Include="src\styles.sass" />
+    <None Include="src\tsconfig.json" />
+    <None Include="tslint.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gulpfile.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="protractor.conf.js" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\assets\css\common.css" />
+    <Content Include="src\assets\css\icons.css" />
+    <Content Include="src\assets\css\kendo.css" />
+    <Content Include="src\assets\css\styles.css" />
+    <Content Include="src\assets\css\variables.css" />
+    <Content Include="src\assets\fonts\Fgicon.svg" />
+    <Content Include="src\assets\img\bg_doc.gif" />
+    <Content Include="src\assets\img\calendar.png" />
+    <Content Include="src\assets\img\checkout-img.png" />
+    <Content Include="src\assets\img\document.jpg" />
+    <Content Include="src\assets\img\empty.png" />
+    <Content Include="src\assets\img\product1.jpg" />
+    <Content Include="src\assets\img\product2.jpg" />
+    <Content Include="src\assets\img\product3.jpg" />
+    <Content Include="src\assets\img\product4.jpg" />
+    <Content Include="src\assets\img\product5.jpg" />
+    <Content Include="src\assets\img\star-filled.png" />
+    <Content Include="src\assets\img\star-unfilled.png" />
+    <Content Include="src\component\directives\itemqtybysize\itemqtybysize.html" />
+    <Content Include="src\component\directives\rating\rating.html" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\index.html" />
+    <Content Include="src\pages\ad-management\test.html" />
+    <Content Include="src\pages\administration\access-code\access.code.html" />
+    <Content Include="src\pages\administration\access-ip\access.ip.html" />
+    <Content Include="src\pages\administration\group-management\group.management.html" />
+    <Content Include="src\pages\administration\login-history\login.history.html" />
+    <Content Include="src\pages\administration\menus\menus.html" />
+    <Content Include="src\pages\administration\resources\resources.html" />
+    <Content Include="src\pages\administration\user-management\user.management.html" />
+    <Content Include="src\pages\ads\ad-spot-setting\ad.spot.setting.html" />
+    <Content Include="src\pages\ads\ad-statistics\ad.statistics.html" />
+    <Content Include="src\pages\ads\banner-ad\banner.ad.html" />
+    <Content Include="src\pages\ads\duplicate-ads\duplicate.ads.html" />
+    <Content Include="src\pages\ads\email-marketing\email.marketing.html" />
+    <Content Include="src\pages\ads\empty-ads\empty.ads.html" />
+    <Content Include="src\pages\ads\item-ad\item.ad.html" />
+    <Content Include="src\pages\bidding\bidding-history\bidding.history.html" />
+    <Content Include="src\pages\bidding\bidding-main\bidding.main.html" />
+    <Content Include="src\pages\bidding\bidding-report\bidding.report.html" />
+    <Content Include="src\pages\bidding\bidding-setting\bidding.setting.html" />
+    <Content Include="src\pages\buyers\buyer-detail\buyer.detail.html" />
+    <Content Include="src\pages\buyers\buyer-list\buyer.list.html" />
+    <Content Include="src\pages\buyers\buyer-rating\buyer.rating.html" />
+    <Content Include="src\pages\buyers\complain-center\complain.center.html" />
+    <Content Include="src\pages\buyers\duplicate-buyer\duplicate.buyer.html" />
+    <Content Include="src\pages\certification\login\login.html" />
+    <Content Include="src\pages\common\dropdown\dropdown.html" />
+    <Content Include="src\pages\common\footer\footer.html" />
+    <Content Include="src\pages\common\header\header.html" />
+    <Content Include="src\pages\common\pagenotfound\page.not.found.html" />
+    <Content Include="src\pages\common\sidemenu\sidemenu.html" />
+    <Content Include="src\pages\dashboard.html" />
+    <Content Include="src\pages\messages\contact-us\contact.us.html" />
+    <Content Include="src\pages\messages\message-buyers\message.buyers.html" />
+    <Content Include="src\pages\messages\message-vendors\message.vendors.html" />
+    <Content Include="src\pages\messages\notice-buyers\notice.buyers.html" />
+    <Content Include="src\pages\messages\notice-vendors\notice.vendors.html" />
+    <Content Include="src\pages\order-management\consolidation.html" />
+    <Content Include="src\pages\site-management\category\category.html" />
+    <Content Include="src\pages\site-management\dm\dm.html" />
+    <Content Include="src\pages\site-management\fg-policy\fg.policy.html" />
+    <Content Include="src\pages\site-management\new-vendor-setting\new.vendor.setting.html" />
+    <Content Include="src\pages\site-management\product-attributes\product.attributes.html" />
+    <Content Include="src\pages\site-management\show-info\show.info.html" />
+    <Content Include="src\pages\site-management\todays-deal\todays.deal.html" />
+    <Content Include="src\pages\site-management\trend-report\trend.report.html" />
+    <Content Include="src\pages\statistics\best-item\best.item.html" />
+    <Content Include="src\pages\statistics\hot-search\hot.search.html" />
+    <Content Include="src\pages\surist\buyer\buyer.html" />
+    <Content Include="src\pages\surist\item-edit\item.edit.html" />
+    <Content Include="src\pages\surist\shipping-address\shipping.address.html" />
+    <Content Include="src\pages\surist\vendor\vendor.html" />
+    <Content Include="src\pages\vendors\banner-request\banner.request.html" />
+    <Content Include="src\pages\vendors\blocked-vendors\blocked.vendors.html" />
+    <Content Include="src\pages\vendors\creditcard-vendors\creditcard.vendors.html" />
+    <Content Include="src\pages\vendors\forms\forms.html" />
+    <Content Include="src\pages\vendors\vendor-list\vendor.list.html" />
+    <Content Include="src\pages\vendors\vendor-rating\vendor.rating.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\index.ts" />
+    <TypeScriptCompile Include="src\component\fgpauth\fgpauth.ts" />
+    <TypeScriptCompile Include="src\pages\certification\login\login.ts" />
+    <TypeScriptCompile Include="src\providers\common\common.ts" />
+    <TypeScriptCompile Include="src\component\common\groupby.ts" />
+    <TypeScriptCompile Include="src\component\directives\itemqtybysize\itemqtybysize.ts" />
+    <TypeScriptCompile Include="src\component\directives\rating\rating.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\pages\ad-management\test.ts" />
+    <TypeScriptCompile Include="src\pages\administration\access-code\access.code.ts" />
+    <TypeScriptCompile Include="src\pages\administration\access-ip\access.ip.ts" />
+    <TypeScriptCompile Include="src\pages\administration\group-management\group.management.ts" />
+    <TypeScriptCompile Include="src\pages\administration\login-history\login.history.ts" />
+    <TypeScriptCompile Include="src\pages\administration\menus\menus.ts" />
+    <TypeScriptCompile Include="src\pages\administration\resources\resources.ts" />
+    <TypeScriptCompile Include="src\pages\administration\user-management\user.management.ts" />
+    <TypeScriptCompile Include="src\pages\ads\ad-spot-setting\ad.spot.setting.ts" />
+    <TypeScriptCompile Include="src\pages\ads\ad-statistics\ad.statistics.ts" />
+    <TypeScriptCompile Include="src\pages\ads\banner-ad\banner.ad.ts" />
+    <TypeScriptCompile Include="src\pages\ads\duplicate-ads\duplicate.ads.ts" />
+    <TypeScriptCompile Include="src\pages\ads\email-marketing\email.marketing.ts" />
+    <TypeScriptCompile Include="src\pages\ads\empty-ads\empty.ads.ts" />
+    <TypeScriptCompile Include="src\pages\ads\item-ad\item.ad.ts" />
+    <TypeScriptCompile Include="src\pages\bidding\bidding-history\bidding.history.ts" />
+    <TypeScriptCompile Include="src\pages\bidding\bidding-main\bidding.main.ts" />
+    <TypeScriptCompile Include="src\pages\bidding\bidding-report\bidding.report.ts" />
+    <TypeScriptCompile Include="src\pages\bidding\bidding-setting\bidding.setting.ts" />
+    <TypeScriptCompile Include="src\pages\buyers\buyer-detail\buyer.detail.ts" />
+    <TypeScriptCompile Include="src\pages\buyers\buyer-list\buyer.list.ts" />
+    <TypeScriptCompile Include="src\pages\buyers\buyer-rating\buyer.rating.ts" />
+    <TypeScriptCompile Include="src\pages\buyers\complain-center\complain.center.ts" />
+    <TypeScriptCompile Include="src\pages\buyers\duplicate-buyer\duplicate.buyer.ts" />
+    <TypeScriptCompile Include="src\pages\common\dropdown\dropdown.ts" />
+    <TypeScriptCompile Include="src\pages\common\footer\footer.ts" />
+    <TypeScriptCompile Include="src\pages\common\header\header.ts" />
+    <TypeScriptCompile Include="src\pages\common\pagenotfound\page.not.found.ts" />
+    <TypeScriptCompile Include="src\pages\common\sidemenu\sidemenu.ts" />
+    <TypeScriptCompile Include="src\pages\dashboard.ts" />
+    <TypeScriptCompile Include="src\pages\messages\contact-us\contact.us.ts" />
+    <TypeScriptCompile Include="src\pages\messages\message-buyers\message.buyers.ts" />
+    <TypeScriptCompile Include="src\pages\messages\message-vendors\message.vendors.ts" />
+    <TypeScriptCompile Include="src\pages\messages\notice-buyers\notice.buyers.ts" />
+    <TypeScriptCompile Include="src\pages\messages\notice-vendors\notice.vendors.ts" />
+    <TypeScriptCompile Include="src\pages\order-management\consolidation.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\category\category.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\dm\dm.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\fg-policy\fg.policy.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\new-vendor-setting\new.vendor.setting.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\product-attributes\product.attributes.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\show-info\show.info.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\todays-deal\todays.deal.ts" />
+    <TypeScriptCompile Include="src\pages\site-management\trend-report\trend.report.ts" />
+    <TypeScriptCompile Include="src\pages\statistics\best-item\best.item.ts" />
+    <TypeScriptCompile Include="src\pages\statistics\hot-search\hot.search.ts" />
+    <TypeScriptCompile Include="src\pages\surist\buyer\buyer.ts" />
+    <TypeScriptCompile Include="src\pages\surist\item-edit\item.edit.ts" />
+    <TypeScriptCompile Include="src\pages\surist\shipping-address\shipping.address.ts" />
+    <TypeScriptCompile Include="src\pages\surist\vendor\vendor.ts" />
+    <TypeScriptCompile Include="src\pages\vendors\banner-request\banner.request.ts" />
+    <TypeScriptCompile Include="src\pages\vendors\blocked-vendors\blocked.vendors.ts" />
+    <TypeScriptCompile Include="src\pages\vendors\creditcard-vendors\creditcard.vendors.ts" />
+    <TypeScriptCompile Include="src\pages\vendors\forms\forms.ts" />
+    <TypeScriptCompile Include="src\pages\vendors\vendor-list\vendor.list.ts" />
+    <TypeScriptCompile Include="src\pages\vendors\vendor-rating\vendor.rating.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\providers\globalvars\globalvars.ts" />
+    <TypeScriptCompile Include="src\providers\http-service\httpservices.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+    <TypeScriptCompile Include="src\typings.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  --> 
+</Project>
